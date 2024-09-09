@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: linear-gradient(to right, #8dc0ed, #bf19c5);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #cc2ec7;
+  border: 1px solid #280522;
+  border-radius: 15px;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#8cff00;
+}
+
+.card-text {
+  font-size:2.2rem;
+  
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  color:#8cff00;
+}
+
+.text-large {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.weather-card {
+  background-color: #cc2ec7;
+  border: 1px solid #280522;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.weather-card .card-title {
+  color: #8cff00;
+}
+
+.weather-card .card-text {
+  font-size: 1.1rem;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+@media (max-width: 768px) {
+  .text-large {
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+footer {
+  margin-top: 6.5%;
+  margin-bottom: 0;
+  border: #280522;
+  border-radius: 5px;
 }
