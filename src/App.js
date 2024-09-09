@@ -40,8 +40,9 @@ function App() {
           <Col md={6}>
             <Card className="text-center">
               <Card.Body>
-                <Card.Title className="text-large">Current Time</Card.Title>
+                <Card.Title className="text-large">Current Date and Time</Card.Title>
                 <Card.Text className="text-large">
+                  {time.toLocaleDateString()}<br />
                   {time.toLocaleTimeString()}
                 </Card.Text>
               </Card.Body>
